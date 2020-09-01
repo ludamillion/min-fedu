@@ -49,10 +49,10 @@ function! s:HL(group, ...) abort
   endif
 endfunction
 " ---------------------------------------------------------------------
-let g:colors_name = "ci_dark"
+let g:colors_name = "min-fedu"
 set background=dark
 " ---------------------------------------------------------------------
-let s:colors = ci_dark#get_colors()
+let s:colors = min_fedu#get_colors()
 
 " editor color scheme
 " ----------------------------------------------------
@@ -65,10 +65,13 @@ call s:HL('CursorLine', s:colors.none, s:colors.cursor_guide)
 " ----------------------------------------------------
 call s:HL('Directory', s:colors.cyan, s:colors.none)
 " ----------------------------------------------------
-call s:HL('DiffAdd', s:colors.background, s:colors.green)
-call s:HL('DiffChange', s:colors.background, s:colors.yellow)
-call s:HL('DiffDelete', s:colors.background, s:colors.red)
-call s:HL('DiffText', s:colors.background, s:colors.magenta)
+call s:HL('DiffAdd', s:colors.green, s:colors.background)
+call s:HL('diffAdded', s:colors.green, s:colors.background)
+call s:HL('DiffChange', s:colors.yellow, s:colors.background)
+call s:HL('diffChanged', s:colors.yellow, s:colors.background)
+call s:HL('DiffDelete', s:colors.red, s:colors.background)
+call s:HL('diffRemoved', s:colors.red, s:colors.background)
+call s:HL('DiffText', s:colors.magenta, s:colors.background)
 " ----------------------------------------------------
 call s:HL('EndOfBuffer', s:colors.background, s:colors.none)
 " ----------------------------------------------------
@@ -124,27 +127,27 @@ call s:HL('WildMenu', s:colors.background, s:colors.cyan)
 
 " standard syntax
 " ----------------------------------------------------
-call s:HL('Comment', s:colors.gray, s:colors.none)
+call s:HL('Comment', s:colors.gray, s:colors.none, s:colors.italic)
 " ----------------------------------------------------
 call s:HL('Constant', s:colors.foreground, s:colors.none)
-call s:HL('String', s:colors.green, s:colors.none)
+call s:HL('String', s:colors.yellow, s:colors.none)
 call s:HL('Number', s:colors.blue, s:colors.none)
 call s:HL('Boolean', s:colors.blue, s:colors.none)
 call s:HL('Float', s:colors.blue, s:colors.none)
 " ----------------------------------------------------
-call s:HL('Identifier', s:colors.yellow, s:colors.none)
-call s:HL('Function', s:colors.blue, s:colors.none)
+call s:HL('Identifier', s:colors.cyan, s:colors.none)
+call s:HL('Function', s:colors.cyan, s:colors.none, s:colors.italic)
 " ----------------------------------------------------
-call s:HL('Statement', s:colors.magenta, s:colors.none, s:colors.bold)
+call s:HL('Statement', s:colors.blue, s:colors.none, s:colors.bold)
 call s:HL('Conditional', s:colors.cyan, s:colors.none, s:colors.bold)
 call s:HL('Repeat', s:colors.cyan, s:colors.none, s:colors.bold)
-call s:HL('Operator', s:colors.magenta, s:colors.none, s:colors.bold)
-call s:HL('Keyword', s:colors.magenta, s:colors.none, s:colors.bold)
+call s:HL('Operator', s:colors.blue, s:colors.none, s:colors.bold)
+call s:HL('Keyword', s:colors.blue, s:colors.none, s:colors.bold)
 call s:HL('Exception', s:colors.cyan, s:colors.none, s:colors.bold)
 " ----------------------------------------------------
 call s:HL('PreProc', s:colors.cyan, s:colors.none)
 call s:HL('Include', s:colors.cyan, s:colors.none)
-call s:HL('Define', s:colors.blue, s:colors.none)
+call s:HL('Define', s:colors.white, s:colors.none, s:colors.bold)
 call s:HL('Macro', s:colors.blue, s:colors.none)
 call s:HL('PreCondit', s:colors.yellow, s:colors.none)
 " ----------------------------------------------------

@@ -4,10 +4,10 @@
 " ------------------------------------------------------------------------
 
 " -------- begin function ----------
-let g:airline#themes#ci_dark#palette = {}
-function! airline#themes#ci_dark#refresh()
+let g:min_fedu#themes#min_fedu#palette = {}
+function! airline#themes#min_fedu#refresh()
 
-let s:colors = ci_dark#get_colors()
+let s:colors = min_fedu#get_colors()
 
 let s:palette = {}
 
@@ -58,8 +58,8 @@ let s:airline_b_commandline = s:airline_b
 let s:airline_c_commandline = s:airline_c
 let s:palette.commandline = airline#themes#generate_color_map(s:airline_a_commandline, s:airline_b_commandline, s:airline_c_commandline)
 
-let g:airline#themes#ci_dark#palette = s:palette
+let g:airline#themes#min_fedu#palette = s:palette
 " ------
 endfunction
 " -------- end function ----------
-call airline#themes#ci_dark#refresh()
+call airline#themes#min_fedu#refresh()

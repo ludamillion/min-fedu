@@ -11,18 +11,18 @@ iTerm color preset: [ci_dark.itermcolors](term/)
 Neovim/Vim
 
 ```viml
-Plug 'chuling/ci_dark'
+Plug 'chuling/min_fedu'
 Plug 'luochen1990/rainbow'
 
 syntax on
 set termguicolors
-colorscheme ci_dark
+colorscheme min_fedu
 
 set fillchars+=vert:│
 
-let g:airline_theme = 'ci_dark'
+let g:airline_theme = 'min_fedu'
 let g:lightline = {
-  \ 'colorscheme': 'ci_dark',
+  \ 'colorscheme': 'min_fedu',
 }
 ```
 

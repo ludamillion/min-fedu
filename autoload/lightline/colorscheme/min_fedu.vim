@@ -3,7 +3,7 @@
 " SPDX-License-Identifier: MIT OR Apache-2.0
 " ------------------------------------------------------------------------
 
-let s:colors = ci_dark#get_colors()
+let s:colors = min_fedu#get_colors()
 
 let s:p = { 'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {} }
 
@@ -31,4 +31,4 @@ let s:p.tabline.right = [[s:colors.background, s:colors.cyan]]
 let s:p.tabline.middle = [[s:colors.foreground, s:colors.background_lighter]]
 let s:p.tabline.tabsel = [[s:colors.background, s:colors.cyan]]
 
-let g:lightline#colorscheme#ci_dark#palette = lightline#colorscheme#fill(s:p)
+let g:lightline#colorscheme#min_fedu#palette = lightline#colorscheme#fill(s:p)
