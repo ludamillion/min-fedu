@@ -5,26 +5,29 @@
 
 let s:colors = {}
 
-let s:colors.black = '#2e383c'
+let s:colors.black = '#293134'
+let s:colors.white = '#fafafa'
+let s:colors.gray = '#80969a'
+
 let s:colors.red = '#fc6550'
 let s:colors.green = '#85de35'
 let s:colors.yellow = '#fdb644'
 let s:colors.blue = '#658bb2'
 let s:colors.magenta = '#a080be'
 let s:colors.cyan = '#95cbf2'
-let s:colors.white = '#f9faf9'
-let s:colors.gray = '#80969a'
+
 
 let s:colors.foreground = s:colors.white
 let s:colors.background = s:colors.black
+
 let s:colors.background_lighter = '#606160'
 
-let s:colors.selection_bg = '#dfe1e4'
+let s:colors.selection_bg = '#97ccf1'
 let s:colors.selection_fg = s:colors.background
 
 let s:colors.cursor_bg = s:colors.green
 let s:colors.cursor_fg = s:colors.background
-let s:colors.cursor_guide = '#2f363d'
+let s:colors.cursor_guide = s:colors.gray
 
 let s:colors.split = '#454d56'
 
