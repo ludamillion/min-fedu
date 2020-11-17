@@ -6,11 +6,11 @@
 let s:colors = {}
 
 " Grayscale
-let s:colors.black     = "#293134"
+let s:colors.black     = "#303134"
 let s:colors.black_alt = "#434D52"
 
-let s:colors.white     = "#fafafa"
-let s:colors.white_alt = "#E0E2E4"
+let s:colors.white     = "#f8f7f7"
+let s:colors.white_alt = "#E0E1E3"
 
 let s:colors.gray     = "#5D6971"
 let s:colors.gray_alt = "#9DA9B1"
