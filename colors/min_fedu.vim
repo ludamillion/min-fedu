@@ -85,7 +85,7 @@ call s:HL('FoldColumn', s:colors.foreground, s:colors.none)
 call s:HL('SignColumn', s:colors.none, s:colors.none)
 call s:HL('IncSearch', s:colors.background, s:colors.magenta)
 call s:HL('LineNr', s:colors.gray, s:colors.none)
-call s:HL('CursorLineNr', s:colors.foreground, s:colors.red)
+call s:HL('CursorLineNr', s:colors.orange, s:colors.none)
 call s:HL('MatchParen', s:colors.red, s:colors.background)
 " ----------------------------------------------------
 call s:HL('ModeMsg', s:colors.foreground, s:colors.none)
@@ -127,7 +127,7 @@ call s:HL('WildMenu', s:colors.background, s:colors.cyan)
 
 " standard syntax
 " ----------------------------------------------------
-call s:HL('Comment', s:colors.black_alt, s:colors.none, s:colors.italic)
+call s:HL('Comment', s:colors.gray, s:colors.none, s:colors.italic)
 " ----------------------------------------------------
 call s:HL('Constant', s:colors.foreground, s:colors.none)
 call s:HL('String', s:colors.orange, s:colors.none)

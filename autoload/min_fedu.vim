@@ -54,7 +54,7 @@ let s:colors.cursor_bg = s:colors.green
 let s:colors.cursor_fg = s:colors.background
 let s:colors.cursor_guide = s:colors.gray
 
-let s:colors.split = "#454d56"
+let s:colors.split = s:colors.black_alt
 
 let s:colors.win_bg = s:colors.selection_bg
 let s:colors.selected_bg = s:colors.gray
